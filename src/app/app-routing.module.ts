@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { KeyfigureOneComponent } from './keyfigure-one/keyfigure-one.component';
+import { JobStatusComponent } from './job-status/job-status.component';
 
 const routes: Routes = [{
-  path: 'keyfigure-one',
-  component: KeyfigureOneComponent
+  path: 'job-status',
+  component: JobStatusComponent
 }];
 
 @NgModule({

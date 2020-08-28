@@ -4,12 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { KeyfigureOneComponent } from './keyfigure-one/keyfigure-one.component';
+import { JobStatusComponent } from './job-status/job-status.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KeyfigureOneComponent
+    JobStatusComponent
   ],
   imports: [
     BrowserModule,
