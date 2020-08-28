@@ -10,9 +10,16 @@ export class GetKeyfigureDataService {
   constructor(private httpClient: HttpClient) { }
 
   public getKeyFigureData(): Observable<{}> {
-    const postData = {};
+    const postData = {
+      allLocSetting: "true",
+      lang: "en",
+      locDateTime: null,
+      locNbrList: [],
+      runPlanNbrList: [],
+      userType: "00000000"
+    };
     return this.httpClient
-      .post(``, postData);
+      .post(`http://localhost:8088/retrieveJobStatus`, postData);
   }
 
 }
